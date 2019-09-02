@@ -240,9 +240,9 @@ public extension UITabBarItem {
         FontLoader.loadFontIfNeeded()
         let tabBarItemImageSize = size ?? CGSize(width: 30, height: 30)
 
-        image = UIImage(icon: icon, size: tabBarItemImageSize, orientation: orientation, textColor: textColor, backgroundColor: backgroundColor).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        image = UIImage(icon: icon, size: tabBarItemImageSize, orientation: orientation, textColor: textColor, backgroundColor: backgroundColor).withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
 
-        selectedImage = UIImage(icon: icon, size: tabBarItemImageSize, orientation: orientation, textColor: selectedTextColor, backgroundColor: selectedBackgroundColor).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        selectedImage = UIImage(icon: icon, size: tabBarItemImageSize, orientation: orientation, textColor: selectedTextColor, backgroundColor: selectedBackgroundColor).withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
 
         setTitleTextAttributes([NSAttributedString.Key.foregroundColor: textColor], for: .normal)
         setTitleTextAttributes([NSAttributedString.Key.foregroundColor: selectedTextColor], for: .selected)
